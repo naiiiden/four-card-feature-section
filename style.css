@@ -26,6 +26,7 @@ img{
 
 body{
     min-height: 100vh;
+    padding: 1rem 0;
 }
 
 .hero{
@@ -36,8 +37,18 @@ body{
 }
 
 .title{
-    line-height: 2;
     margin-bottom: 5%;
+}
+
+.title h1 {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--very-dark-blue);
+}
+
+.title strong {
+    font-size: 24px;
+    color: var(--very-dark-blue);
 }
 
 .con{
@@ -94,11 +105,25 @@ color: var(--very-dark-blue-blue);
     }
     .hero{
         width: 450px;
-        padding-top: 15vh;
     }
+
     .column{
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .title h1 {
+        font-size: 36px;
+    }
+
+    .title strong {
+        font-size: 36px;
+    }
+
+    body {
+        padding: 0;
+        display: grid;
+        place-content: center;
     }
 }
